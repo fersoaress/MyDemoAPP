@@ -41,6 +41,7 @@ public class MochilaNovo {
 
         driver = new AndroidDriver(remoteUrl, options);
         return remoteUrl;
+        //teste
     }
 
 
