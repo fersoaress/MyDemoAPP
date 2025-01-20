@@ -41,12 +41,11 @@ public class MochilaNovo {
 
         driver = new AndroidDriver(remoteUrl, options);
         return remoteUrl;
-        //teste
     }
 
 
     @Test
-    public void sampleTest() {
+    public void selecionarMochila() {
         var imgProduto = driver.findElement(AppiumBy.xpath("(//android.widget.ImageView[@content-desc=\"Product Image\"])[1]"));
         imgProduto.click();
         var lblNomeProduto = driver.findElement(AppiumBy.id("com.saucelabs.mydemoapp.android:id/productTV"));
